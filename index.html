@@ -8,5 +8,138 @@
 </head>
 <body>
     <h1>Заголовок</h1>
+    <p id="text">Какой-нибудь текст</p>
+    <button onclick="changeColor('blue');">Синий</button>
+    <button onclick="changeColor('red');">Красный</button>
+    <script>
+
+
+        //Объекты в JavaScript
+        function Fruit (color,shape){
+            this.color = color;
+            this.shape = shape;
+        }
+        var melon = new Fruit('yellow','round');
+        var apple = new Fruit('red','round');
+
+        //var apple = new Object();
+        //apple.color = 'green';
+        //apple.shape = 'round';
+
+        melon.describe = function() {
+            return 'An melon is ' + this.color;
+        }
+
+        //console.log(melon.describe());
+
+
+
+        //Созданием объектов
+        var person = {
+            firstName:"Егор",
+            age: 23,
+            children: ['Лиза','Петя'],
+            adress:{
+                street: 'Военный городо-33,6,74',
+                city: 'Казань',
+                state: 'Россия'
+            },
+            NameAge: function () {
+                return this.firstName + ", age is -" + this.age;
+            }
+        }
+
+        console.log(person.NameAge());
+
+        //Функции
+        function summ(a,b){
+            return a + b;
+        }
+
+        //document.write(summ(15,8));
+
+        //Операторы условий
+        /*var num_1 = 233;
+        var num_2 = 233;
+        if(num_1 > num_2){
+            console.log(num_1 + " > "+ num_2);
+        }
+        else if(num_1 == num_2){
+            console.log(num_1 + " = "+ num_2);
+        }
+        else{
+            console.log(num_1 + " < "+ num_2);
+        }
+
+        var bool = false;
+        if((!bool || num_1 != 233) && num_2 == 233){
+            console.log(bool + " is false");
+        }*/
+
+        /*var res = 4;
+        switch(res){
+            case 1:
+                alert("Res is 1");
+              break;
+            case 2:
+                alert("Res is 2");
+              break;
+            case 3:
+                alert("Res is 3");
+              break;
+              default:
+                alert("None");
+        }*/
+
+        //Циклы
+        /*var i = 20;
+        do {
+            console.log(i);
+        } while(i < 10);
+        */
+
+        /*var i = 200;
+        while(i >= 10)
+        {
+            document.write(i + "<br>");
+            i/=2;
+        }
+
+        for(var i = 100; i >= 10; i -= 10)
+        {
+            document.write(i + "<br>");
+        }
+        */
+
+        //Массивы
+        var colors = ["Red","Blue","Green"];
+        var colors1 = new Array("Red","Blue","Green");
+        colors1[3] = "Grey";
+        colors1.push("Balck")
+
+        /*for(var i = 0; i < colors1.length; i++)
+        {
+            document.write(colors1[i] + "<br>");
+        } 
+        */
+
+        //document.write(colors1[0] + " " + colors1[2]);
+
+        //Математические операции
+        var firstNum = 12;
+        var secondNum = 24;
+
+        firstNum--;
+        //document.write("Результат: ", firstNum + secondNum + "<br>");
+        //document.write("Число Пи: "+ Math.PI);
+        
+        //Работа с переменными
+        var num = 10;
+        var bool = true;
+        //console.log(bool);
+
+        //var name = prompt("Как вас зовут ?");
+        //console.log("Ваше имя "+ name);
+    </script>
 </body>
 </html>
